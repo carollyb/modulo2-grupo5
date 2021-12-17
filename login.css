@@ -1,0 +1,86 @@
+/*CSS referente páginas de login e recuperação de senha*/
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+}
+
+.login, .passwordForgot {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.loginContainer, .passwordContainer {
+    min-height: 400px;
+    width: 300px;
+    box-sizing: border-box;
+    padding: 32px;
+    border-radius: 8px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.loginTitle, .passTitle {
+margin-bottom: 32px;
+}
+
+.loginForm {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.loginInput {
+    height: 48px;
+    width: 100%;
+    box-sizing: border-box;
+    padding-left: 8px;
+    border: unset;
+    outline: none;
+}
+
+.loginInputBorder{
+    height: 1px;
+    width: 100%;
+    margin-bottom: 16px;
+    transition: .3s ease-in-out;
+}
+
+.check{
+    position: absolute;
+    display: flex;
+}
+
+.submit{
+    height: 48px;
+    width: 100%;
+    outline: none;
+    margin-bottom: 32px;
+}
+
+#forgotPass{
+    text-decoration: none;
+}
+
+.passForm{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.emailInfo{
+    padding: 10px;
+}
+
+.passSubmit{
+    height: 48px;
+    width: 60%;
+    outline: none;
+    margin-bottom: 32px;
+}

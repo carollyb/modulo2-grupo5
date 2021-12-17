@@ -4,23 +4,38 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../login.css">
     <title>Login</title>
 </head>
+
     <body>
-        <main>
-           <div id="login-container">
-               <h1>Fazer login</h1>
-               <form action="">
-                   <label for="email">Email</label>
-                   <input type="email" name="email" id="email" placeholder="Digite seu email" autocomplete="off">
-                   <label for="password">Senha</label>
-                   <input type="password" name="password" id="password" placeholder="Digite sua senha">
-                   <input type="checkbox" class="form-check-input">
-                   <label class="form-check-label">Lembrar-me</label>
-                   <a href="./password.html" id="forgot-pass">Esqueci minha senha!</a>
-                <input type="submit" value="Entrar">
-               </form>
+        <header>
+
+        </header>
+        
+        <main class="login">
+           <div class="loginContainer">
+               <h1 class="loginTitle">Fazer login</h1>
+               
+               <form action="" class="loginForm">
+                   <input type="email" id="email" class="loginInput" placeholder="Digite seu email" autocomplete="off">
+                   <span class="loginInputBorder"></span>
+                   <input type="password" id="password" class="loginInput" placeholder="Digite sua senha">
+                   <span class="loginInputBorder"></span>
+                   
+                   <div class="check">
+                       <input type="checkbox" class="rememberMe" value="true" checked>
+                       <label for= "rememberMe" class="rememberMeTrue">Lembre-se de mim</label>
+                    </div>
+                    
+                    <button class="submit">Entrar</button>
+                    <a href="./password.html" id="forgotPass">Esqueci minha senha</a>
+                </form>
            </div> 
         </main>
+        
+        <footer>
+
+        </footer>
     </body>
 </html>
