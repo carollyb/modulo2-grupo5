@@ -10,3 +10,15 @@ function buscaFilme(nomeFilme) {
     },
   });
 }
+
+function buscaFilmeID(idFilme) {
+  if (!filmeExiste(idFilme)) {
+    $.ajax({
+      type: 'GET',
+      url: `${url}i=${idFilme}`,
+      success: function (data) {
+        return data;
+      },
+    });
+  }
+}
