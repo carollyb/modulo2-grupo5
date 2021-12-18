@@ -10,5 +10,3 @@ function buscaFilme(nomeFilme) {
     },
   });
 }
-
-buscaFilme('nightmare before');
