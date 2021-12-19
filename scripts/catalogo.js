@@ -13,6 +13,15 @@ const baseFilmes = [
 
 const catalogo = [];
 
+function criaCatalogo() {
+  while (catalogo.length < 5) {
+    let id = randomID();
+    if (catalogo.indexOf(baseFilmes[id]) == -1) {
+      catalogo.push(baseFilmes[id]);
+    }
+  }
+}
+
 function randomID() {
   return Math.floor(Math.random() * baseFilmes.length);
 }
