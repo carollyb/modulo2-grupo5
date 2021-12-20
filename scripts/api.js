@@ -1,6 +1,7 @@
 const api_key = 'c30ccb91';
 const url = `http://www.omdbapi.com/?apikey=${api_key}&`;
 
+//NAO FUNCIONAL
 function buscaFilme(nomeFilme) {
   $.ajax({
     type: 'GET',
@@ -11,6 +12,7 @@ function buscaFilme(nomeFilme) {
   });
 }
 
+//NAO FUNCIONAL
 function buscaFilmeID(idFilme) {
   $.ajax({
     type: 'GET',
@@ -21,8 +23,21 @@ function buscaFilmeID(idFilme) {
   });
 }
 
-async function buscaCEP(cep) {
+//NAO FUNCIONAL
+function buscaCEP(cep) {
   let url = `https://viacep.com.br/ws/${cep}/json/`;
-  let teste = await fetch(url).then((response) => response.json());
-  return teste;
+  return new Promise((resolve, reject) => {
+    fetch(url)
+      .then((response) => response.json())
+      .then((data) => {
+        resolve(data);
+      })
+      .catch((error) => reject(error));
+  });
 }
+
+buscaCEP(1224591)
+  .then((data) => {
+    console.log(data);
+  })
+  .catch((error) => console.log('CEP inválido ou não encontrado'));
