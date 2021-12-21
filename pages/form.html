@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../style/form.css">
+    <title>Cadastro</title>
+</head>
+<body>
+    <div>
+        <h1 id="titulo">Cadastre-se</h1>
+        <p id="subtitulo"> Para informações sobre o filme selecionado, faça seu cadastro aqui:</p>
+        <br>
+    </div>
+
+<form id="form">
+    <fieldset>
+        <div>
+            <label><strong>Nome</strong></label> <br>
+            <input type="text" name="nome" id="nome" required> 
+        </div>
+        <div>
+            <label><strong>RG</strong></label> <br>
+            <input type="text" name="rg" id="rg"> 
+        </div>
+        <div>
+            <label><strong>CEP</strong></label> <br>
+            <input type="text" name="cep" id="cep" maxlength="8"> 
+        </div>
+        <div>
+            <label><strong>Estado</strong></label> <br>
+            <input type="text" name="estado" id="estado"> 
+
+        </div>
+        <div>
+            <label><strong>Cidade</strong></label> <br>
+            <input type="text" name="cidade" id="cidade"> 
+
+        </div>
+        <div>
+            <label><strong>Bairro</strong></label> <br>
+            <input type="text" name="bairro" id="bairro"> 
+
+        </div>
+        <div>
+            <label><strong>Rua</strong></label> <br>
+            <input type="text" name="rua" id="rua"> 
+
+        </div>
+        <div>
+            <label><strong>Número</strong></label> <br>
+            <input type="text" name="numero" id="numero"> 
+
+        </div>
+        <div>
+            <label><strong>Complemento</strong></label> <br>
+            <input type="text" name="complemento" id="complemento"> 
+
+        </div>
+        <div>
+            <label><strong>Email</strong></label> <br>
+            <input type="email" name="email" id="email" required> 
+        </div>
+        <div>
+            <label><strong>Senha</strong></label> <br>
+            <input type="text" name="senha" id="senha"> 
+        </div>
+        <div>
+            <label><strong>Confirme sua senha</strong></label> <br>
+            <input type="text" name="confirmaçao" id="confirmaçao"> 
+        </div> <br>
+    
+            <button type="submit" id="botao">Enviar</button> 
+        
+    </fieldset>
+</form>
+<script src="https://code.jquery.com/jquery-3.6.0.min.js" ></script>
+<script src="../scripts/api.js" ></script>
+<script src="../scripts/form.js"></script>
+</body>
+</html>
