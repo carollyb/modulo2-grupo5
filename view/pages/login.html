@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../../view/style/login.css">
+    <title>Login</title>
+</head>
+
+    <body>
+        <header>
+
+        </header>
+        
+        <main class="login">
+           <div class="loginContainer">
+               <h1 class="loginTitle">Fazer login</h1>
+
+               <form action="" class="loginForm">
+                   <input type="email" id="email" class="loginInput" placeholder="Digite seu email" autocomplete="off">
+                   <span class="loginInputBorder"></span>
+                   <input type="password" id="password" class="loginInput" placeholder="Digite sua senha">
+                   <span class="loginInputBorder"></span>
+                   
+                   <div class="check">
+                       <input type="checkbox" class="rememberMe" value="true" checked>
+                       <label for= "rememberMe" class="rememberMeTrue">Lembre-se de mim</label>
+                    </div>
+                    
+                    <button class="submit">Entrar</button>
+                    <a href="./password.html" id="forgotPass">Esqueci minha senha</a>
+                </form>
+           </div> 
+        </main>
+        
+        <footer>
+
+        </footer>
+        <script src="https://code.jquery.com/jquery-3.6.0.min.js"
+  integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4="
+  crossorigin="anonymous"></script>
+        <script src="../../controller/login.js"></script>
+    </body>
+</html>
