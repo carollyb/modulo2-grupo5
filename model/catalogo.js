@@ -1,4 +1,10 @@
-class Catalogo {
+export class Catalogo {
+  constructor() {
+    this.criaCatalogo();
+  }
+
+  #catalogo = [];
+
   #baseFilmes = [
     'tt0038650',
     'tt0107688',
@@ -32,11 +38,9 @@ class Catalogo {
     'tt0051561',
   ];
 
-  #catalogo = [];
-
   criaCatalogo() {
     this.#catalogo = [];
-    while (this.#catalogo.length < 12) {
+    while (this.#catalogo.length < 13) {
       let id = this.randomID();
       if (this.#catalogo.indexOf(this.#baseFilmes[id]) == -1) {
         this.#catalogo.push(this.#baseFilmes[id]);
