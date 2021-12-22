@@ -1,0 +1,16 @@
+.img-carrossel {
+    object-fit: cover;
+    object-position: 0 60%;
+    height: 700px;
+    opacity: 1;
+    transition: 1s;
+}
+
+.titulo-carr {
+    font-family: 'Baloo Da 2', cursive;
+    object-position: 0 50%;
+}
+
+.img-carrossel:hover{
+    opacity: 0.5;
+}
