@@ -1,26 +1,53 @@
 const catalog = new Catalogo();
+const api = new Api();
 
 function preencheFilme() {
-  let filmes = catalog.getCatalogo();
-  for (let i = 0; i < 3; i++) {
-    buscaFilmeID(filmes[i]).then(function (data) {
-      if (i === 0) {
-        $('.carousel-inner').append(`
-                <div class="carousel-item active">
-                <img src="${data.Poster}" class="img-carrossel" alt="...">
-                <div class="carousel-caption d-none d-md-block h-50 w-25">
-                <h1 class="titulo-carr display-4">${data.Title}</h1>
-                </div>`);
-      } else {
-        $('.carousel-inner').append(`
-                <div class="carousel-item">
-                <img src="${data.Poster}" class="img-carrossel" alt="...">
-                <div class="carousel-caption d-none d-md-block h-50 w-25">
-                <h1 class="titulo-carr display-4">${data.Title}</h1>
-                </div>`);
-      }
-    });
-  }
+  return new Promise((resolve, reject) => {
+    let filmes = catalog.getCatalogo();
+    for (let i = 0; i < filmes.length; i++) {
+      api
+        .buscaFilmeID(filmes[i])
+        .then(function (data) {
+          if (i < 3) {
+            if (i === 0) {
+              $('.carousel-inner').append(`
+                    <div class="carousel-item active h-100">
+                    <img src="${data.Poster}" class="d-inline h-100 filme" alt="..." id="${data.imdbID}">
+                    </div>`);
+            } else {
+              $('.carousel-inner').append(`
+                    <div class="carousel-item h-100">
+                    <img src="${data.Poster}" class="d-inline h-100 filme" alt="..." id="${data.imdbID}">
+                    </div>`);
+            }
+          } else {
+            $('.catalogo').append(`
+            <div class="card-filme filme">
+            <div class="glass"></div>
+              <img src="${data.Poster}" alt="" id="${data.imdbID}" class="filme-catalogo">
+            </div>
+          `);
+          }
+        })
+        .then(() => {
+          if (i == filmes.length - 1) {
+            resolve();
+          }
+        });
+    }
+  });
 }
 
-preencheFilme();
+preencheFilme().then(() => {
+  $('.carousel-inner')
+    .find('.carousel-item')
+    .click((e) => {
+      console.log(e.target.id);
+    });
+
+  $('.catalogo')
+    .find('.card-filme')
+    .click((e) => {
+      console.log(e.target.id);
+    });
+});
