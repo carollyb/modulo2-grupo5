@@ -40,7 +40,7 @@ class Catalogo {
 
   criaCatalogo() {
     this.#catalogo = [];
-    while (this.#catalogo.length < 13) {
+    while (this.#catalogo.length < 15) {
       let id = this.randomID();
       if (this.#catalogo.indexOf(this.#baseFilmes[id]) == -1) {
         this.#catalogo.push(this.#baseFilmes[id]);
