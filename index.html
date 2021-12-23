@@ -11,30 +11,26 @@
       integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3"
       crossorigin="anonymous"
     />
+    <link rel="stylesheet" href="./view/style/home.css" />
   </head>
   <body>
     <header>
-      <a href=""><h1>RESILIAFLIX</h1></a>
-      <div class="buscar">
-        <input type="text" name="" id="" />
-        <button>Buscar</button>
-      </div>
-      <div class="usuario">
-        <a href="#">Cadastre-se</a>
-        <a href="#"> Login</a>
-      </div>
+      <!-- NAV - BOOTSTRAP -->
     </header>
-    <main>
+    <main
+      class="
+        d-flex
+        flex-column
+        w-100
+        text-center
+        justify-content-center
+        align-items-center
+      "
+    >
       <div class="destaque d-flex w-100" style="height: 600px">
         <div
           id="carouselExampleControls"
-          class="
-            d-flex
-            slide
-            carousel carousel-dark
-            w-100
-            justify-content-center
-          "
+          class="d-flex slide carousel w-100 justify-content-center"
           data-bs-ride="carousel"
         >
           <div class="d-flex carousel-inner h-100 text-center"></div>
@@ -60,7 +56,19 @@
       </div>
 
       <div class="servico"></div>
-      <div class="catalogo"></div>
+      <div
+        class="
+          catalogo
+          d-flex
+          w-100
+          gap-3
+          mt-5
+          flex-wrap
+          text-center
+          align-items-center
+          justify-content-center
+        "
+      ></div>
     </main>
     <footer>
       <a href="#">Contato</a>

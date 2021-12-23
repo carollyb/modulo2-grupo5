@@ -12,19 +12,19 @@ function preencheFilme() {
             if (i === 0) {
               $('.carousel-inner').append(`
                     <div class="carousel-item active h-100">
-                    <img src="${data.Poster}" class="d-inline h-100" alt="..." id="${data.imdbID}">
+                    <img src="${data.Poster}" class="d-inline h-100 filme" alt="..." id="${data.imdbID}">
                     </div>`);
             } else {
               $('.carousel-inner').append(`
                     <div class="carousel-item h-100">
-                    <img src="${data.Poster}" class="d-inline h-100" alt="..." id="${data.imdbID}">
+                    <img src="${data.Poster}" class="d-inline h-100 filme" alt="..." id="${data.imdbID}">
                     </div>`);
             }
           } else {
             $('.catalogo').append(`
-            <div class="card-filme">
-              <img src="${data.Poster}" alt="" id="${data.imdbID}">
-              <p>${data.Title}</p>
+            <div class="card-filme filme">
+            <div class="glass"></div>
+              <img src="${data.Poster}" alt="" id="${data.imdbID}" class="filme-catalogo">
             </div>
           `);
           }
