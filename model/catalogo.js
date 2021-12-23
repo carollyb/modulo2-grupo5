@@ -1,4 +1,4 @@
-export class Catalogo {
+class Catalogo {
   constructor() {
     this.criaCatalogo();
   }
