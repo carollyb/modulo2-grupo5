@@ -12,7 +12,7 @@ class Catalogo {
     'tt0319343',
     'tt3281548',
     'tt0170016',
-    'tt0203671',
+    'tt0059026',
     'tt2709692',
     'tt0064612',
     'tt0338348',
@@ -34,13 +34,13 @@ class Catalogo {
     'tt0449059',
     'tt8326624',
     'tt0245429',
-    'tt7182294',
-    'tt0051561',
+    'tt0091830',
+    'tt0100142',
   ];
 
   criaCatalogo() {
     this.#catalogo = [];
-    while (this.#catalogo.length < 13) {
+    while (this.#catalogo.length < 15) {
       let id = this.randomID();
       if (this.#catalogo.indexOf(this.#baseFilmes[id]) == -1) {
         this.#catalogo.push(this.#baseFilmes[id]);

@@ -1,0 +1,13 @@
+body {
+  background-color: #001c3f;
+}
+
+.filme-catalogo {
+  width: 270px;
+  height: 400px;
+  object-fit: cover;
+}
+
+.filme:hover {
+  cursor: pointer;
+}
