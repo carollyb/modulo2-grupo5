@@ -22,10 +22,10 @@ function preencheFilme() {
             }
           } else {
             $('.catalogo').append(`
-          <div class="">
-            <img src="${data.Poster}" alt="">
-            <p>${data.Title}</p>
-          </div>
+            <div class="card-filme">
+              <img src="${data.Poster}" alt="" id="${data.imdbID}">
+              <p>${data.Title}</p>
+            </div>
           `);
           }
         })
@@ -43,6 +43,11 @@ preencheFilme().then(() => {
     .find('.carousel-item')
     .click((e) => {
       console.log(e.target.id);
-      localStorage.setItem('busca', e.target.id);
+    });
+
+  $('.catalogo')
+    .find('.card-filme')
+    .click((e) => {
+      console.log(e.target.id);
     });
 });
