@@ -18,13 +18,26 @@
       <nav class="navbar navbar-expand-lg navbar-light fixed-top border-bottom">
         <div class="container-fluid">
           <a class="navbar-brand text-white" href="#">resiliaflix</a>
-          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
             <span class="navbar-toggler-icon"></span>
           </button>
-          <div class="collapse navbar-collapse justify-content-end" id="navbarSupportedContent">
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
             <ul class="navbar-nav me-auto mb-2 mb-lg-0">
               <li class="nav-item">
-                <a class="nav-link active text-white" aria-current="page" href="#">cadastre-se</a>
+                <a
+                  class="nav-link active text-white"
+                  aria-current="page"
+                  href="#"
+                  >cadastre-se</a
+                >
               </li>
               <li class="nav-item">
                 <a class="nav-link text-white" href="#">login</a>
@@ -32,24 +45,43 @@
               <li class="nav-item">
                 <a class="nav-link text-white" href="#">contato</a>
               </li>
-            <li class="nav-item">
-              <a class="nav-link text-white" href="#">serviços</a>
-            </li>
+              <li class="nav-item">
+                <a class="nav-link text-white" href="#">serviços</a>
+              </li>
               <li class="nav-item dropdown">
-                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                <a
+                  class="nav-link dropdown-toggle"
+                  href="#"
+                  id="navbarDropdown"
+                  role="button"
+                  data-bs-toggle="dropdown"
+                  aria-expanded="false"
+                >
                   Dropdown
                 </a>
                 <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
                   <li><a class="dropdown-item" href="#">Action</a></li>
                   <li><a class="dropdown-item" href="#">Another action</a></li>
-                  <li><hr class="dropdown-divider"></li>
-                  <li><a class="dropdown-item" href="#">Something else here</a></li>
+                  <li><hr class="dropdown-divider" /></li>
+                  <li>
+                    <a class="dropdown-item" href="#">Something else here</a>
+                  </li>
                 </ul>
               </li>
             </ul>
             <form class="d-flex">
-              <input class="form-control me-2 rounded-pill opacity-25" type="search" placeholder="digite um filme" aria-label="Search">
-              <button class="btn btn-outline-success rounded-pill bg-light" type="submit">buscar</button>
+              <input
+                class="form-control me-2 rounded-pill opacity-25"
+                type="search"
+                placeholder="digite um filme"
+                aria-label="Search"
+              />
+              <button
+                class="btn btn-outline-success rounded-pill bg-light"
+                type="submit"
+              >
+                buscar
+              </button>
             </form>
           </div>
         </div>
@@ -93,7 +125,24 @@
         </div>
       </div>
 
-      <div class="servico"></div>
+      <div class="d-flex flex-column w-100 mt-5 border-top border-bottom h-75 bordas-servico">
+        <img
+          src="https://i1.wp.com/wildwinterfestivaloflights.com/wp-content/uploads/2021/09/xmas-lights-2-e1632171757642.png?fit=2000%2C210&ssl=1"
+          alt=""
+        />
+        <p class="w-50 fs-1 text-white serv">Passe suas férias com a ResiliaFlix!</p>
+        <p class="w-50 m-3 p-5 fw-light fs-5 text-white text-justify">
+          Lorem ipsum, dolor sit amet consectetur adipisicing elit. Accusantium
+          excepturi harum sit recusandae, cupiditate officia aut iste iusto ea
+          similique labore blanditiis quisquam odio nemo libero doloribus
+          voluptas itaque dignissimos.
+        </p>
+        <img
+          src="https://i1.wp.com/wildwinterfestivaloflights.com/wp-content/uploads/2021/09/xmas-lights-2-e1632171757642.png?fit=2000%2C210&ssl=1"
+          alt=""
+        />
+      </div>
+
       <div
         class="
           catalogo
@@ -105,10 +154,10 @@
           text-center
           align-items-center
           justify-content-center
-        "
+        " onclick="redireciona()"
       ></div>
     </main>
-    <footer>
+    <footer class="border-top">
       <a href="#">Contato</a>
       <a href="#">Serviços</a>
     </footer>
@@ -126,5 +175,6 @@
     <script src="./model/Catalogo.js"></script>
     <script src="./model/api.js"></script>
     <script src="./controller/home.js"></script>
+    <script src="./view/viewers/info-view.js"></script>
   </body>
 </html>

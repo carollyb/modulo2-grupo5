@@ -2,31 +2,14 @@ body {
     background-color: #001C3F;
 }
 
-.img-carrossel {
-    object-fit: cover;
-    object-position: 0 60%;
-    height: 700px;
-    opacity: 1;
-    transition: 1s;
+.container{
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
 }
 
-.titulo-carr {
-    font-family: 'Baloo Da 2', cursive;
-    object-position: 0 50%;
-}
-
-#exemplo{
-    object-fit: cover;
-    height: 400px;
-}
-.prop{
-    font-family: 'Baloo Da 2', cursive;
-    color: rgb(150, 34, 34);
-    font-size: 100px;
-    position: absolute;
-    bottom: 8px;
-    right: 100px;
-}
-.img-carrossel:hover{
-    opacity: 0.5;
+#optionsLog{
+    display: flex;
+    flex-direction: column;
 }
