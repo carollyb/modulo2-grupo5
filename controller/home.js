@@ -24,7 +24,7 @@ function preencheFilme() {
             $('.catalogo').append(`
             <div class="card-filme filme">
             <div class="glass"></div>
-              <img src="${data.Poster}" alt="" id="${data.imdbID}" class="filme-catalogo">
+            <div class="content"><img src="${data.Poster}" alt="" id="${data.imdbID}" class="filme-catalogo"></div>
             </div>
           `);
           }
