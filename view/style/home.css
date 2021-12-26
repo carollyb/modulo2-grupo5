@@ -1,5 +1,15 @@
+@import url('https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Baloo+Da+2:wght@500&display=swap');
+
 body {
   background-color: #001c3f;
+}
+
+.navbar {
+  background-color: #001c3f;
+}
+
+.serv{
+  font-family: 'Abril Fatface', cursive;
 }
 
 .filme-catalogo {
@@ -8,6 +18,152 @@ body {
   object-fit: cover;
 }
 
-.filme:hover {
+.card-filme {
+  position: relative;
+  width: 300px;
+  height: 400px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: #060c21;
+  margin: 40px;
+}
+
+.card-filme:before{
+  content: '';
+  position: absolute;
+  top: -2px;
+  left: -2px;
+  right: -2px;
+  bottom: -2px;
+  background: #fff;
+  z-index: -1;
+}
+
+.card-filme:after{
+  content: '';
+  position: absolute;
+  top: -2px;
+  left: -2px;
+  right: -2px;
+  bottom: -2px;
+  background: #fff;
+  z-index: -2;
+  filter: blur(40px);
+}
+
+
+.card-filme .glass {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  display: block;
+  background: rgba(255,255,255,.1);
+  pointer-events: none;
+}
+
+.card-filme:nth-child(1):before,
+.card-filme:nth-child(1):after{
+  background: linear-gradient(235deg,#89ff00,#001c3f,#00bcd4);
+}
+
+.card-filme:nth-child(2):before,
+.card-filme:nth-child(2):after{
+  background: linear-gradient(235deg,#ff0202,#001c3f,#fbff03);
+}
+
+.card-filme:nth-child(3):before,
+.card-filme:nth-child(3):after{
+  background: linear-gradient(235deg,#89ff00,#001c3f,#00bcd4);
+}
+
+.card-filme:nth-child(4):before,
+.card-filme:nth-child(4):after{
+  background: linear-gradient(235deg,#ff0202,#001c3f,#fbff03);
+}
+
+.card-filme:nth-child(5):before,
+.card-filme:nth-child(5):after{
+  background: linear-gradient(235deg,#89ff00,#001c3f,#00bcd4);
+}
+
+.card-filme:nth-child(6):before,
+.card-filme:nth-child(6):after{
+  background: linear-gradient(235deg,#ff0202,#001c3f,#fbff03);
+}
+
+.card-filme:nth-child(7):before,
+.card-filme:nth-child(7):after{
+  background: linear-gradient(235deg,#89ff00,#001c3f,#00bcd4);
+}
+
+.card-filme:nth-child(8):before,
+.card-filme:nth-child(8):after{
+  background: linear-gradient(235deg,#ff0202,#001c3f,#fbff03);
+}
+
+.card-filme:nth-child(9):before,
+.card-filme:nth-child(9):after{
+  background: linear-gradient(235deg,#89ff00,#001c3f,#00bcd4);
+}
+
+.card-filme:nth-child(10):before,
+.card-filme:nth-child(10):after{
+  background: linear-gradient(235deg,#ff0202,#001c3f,#fbff03);
+}
+
+.card-filme:nth-child(11):before,
+.card-filme:nth-child(11):after{
+  background: linear-gradient(235deg,#89ff00,#001c3f,#00bcd4);
+}
+
+.card-filme:nth-child(12):before,
+.card-filme:nth-child(12):after{
+  background: linear-gradient(235deg,#ff0202,#001c3f,#fbff03);
+}
+
+.card-filme:nth-child(13):before,
+.card-filme:nth-child(13):after{
+  background: linear-gradient(235deg,#89ff00,#001c3f,#00bcd4);
+}
+
+.card-filme:nth-child(14):before,
+.card-filme:nth-child(14):after{
+  background: linear-gradient(235deg,#ff0202,#001c3f,#fbff03);
+}
+
+.card-filme:nth-child(15):before,
+.card-filme:nth-child(15):after{
+  background: linear-gradient(235deg,#89ff00,#001c3f,#00bcd4);
+}
+
+.card-filme:nth-child(16):before,
+.card-filme:nth-child(16):after{
+  background: linear-gradient(235deg,#ff0202,#001c3f,#fbff03);
+}
+
+.card-filme:nth-child(17):before,
+.card-filme:nth-child(17):after{
+  background: linear-gradient(235deg,#89ff00,#001c3f,#00bcd4);
+}
+
+.card-filme:nth-child(18):before,
+.card-filme:nth-child(18):after{
+  background: linear-gradient(235deg,#ff0202,#001c3f,#fbff03);
+}
+
+.card-filme:nth-child(19):before,
+.card-filme:nth-child(19):after{
+  background: linear-gradient(235deg,#89ff00,#001c3f,#00bcd4);
+}
+
+.card-filme:nth-child(20):before,
+.card-filme:nth-child(20):after{
+  background: linear-gradient(235deg,#ff0202,#001c3f,#fbff03);
+}
+
+.card-filme:hover {
   cursor: pointer;
 }

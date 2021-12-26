@@ -24,7 +24,7 @@ function preencheFilme() {
             $('.catalogo').append(`
             <div class="card-filme filme">
             <div class="glass"></div>
-              <img src="${data.Poster}" alt="" id="${data.imdbID}" class="filme-catalogo">
+            <div class="content"><img src="${data.Poster}" alt="" id="${data.imdbID}" class="filme-catalogo"></div>
             </div>
           `);
           }
@@ -42,12 +42,33 @@ preencheFilme().then(() => {
   $('.carousel-inner')
     .find('.carousel-item')
     .click((e) => {
-      console.log(e.target.id);
+      localStorage.setItem('id',e.target.id)
+      window.location.assign('./view/pages/info.html')
     });
 
   $('.catalogo')
     .find('.card-filme')
     .click((e) => {
-      console.log(e.target.id);
+      localStorage.setItem('id',e.target.id)
+      window.location.assign('./view/pages/info.html')
     });
 });
+
+$('.buscarFilme').click((e) => {
+  e.preventDefault();
+  let titulo = $('.inputFilme').val();
+  if (titulo != '') {
+    localStorage.setItem('titulo',titulo)
+    $('.inputFilme').val('')
+    window.location.assign('./view/pages/info.html')
+  }
+})
+
+
+
+/*function redireciona(){
+  let ide = document.querySelector('.filme-catalogo')
+  let teste = ide.getAttribute('id')
+  localStorage.setItem('id',teste)
+  window.location.assign('./view/pages/info.html');
+  }*/
