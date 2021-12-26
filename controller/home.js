@@ -63,12 +63,3 @@ $('.buscarFilme').click((e) => {
     window.location.assign('./view/pages/info.html')
   }
 })
-
-
-
-/*function redireciona(){
-  let ide = document.querySelector('.filme-catalogo')
-  let teste = ide.getAttribute('id')
-  localStorage.setItem('id',teste)
-  window.location.assign('./view/pages/info.html');
-  }*/
