@@ -1,14 +1,20 @@
 function redireciona(){
-    window.location.assign('./view/pages/info.html')
-}
+  let ide = document.querySelector('.filme-catalogo')
+  let teste = ide.getAttribute('id')
+  localStorage.setItem('id',teste)
+  window.location.assign('./view/pages/info.html');
+  }
+
+let filmeInfo = localStorage.getItem('id')
+console.log(filmeInfo);
 
 
-/*function preencheFilmeInfo() {
+function preencheFilmeInfo() {
   return new Promise((resolve, reject) => {
     let filmes = catalog.getCatalogo();
     for (let i = 0; i < filmes.length; i++) {
       api
-        .buscaFilmeID(filmeEspecifico)
+        .buscaFilmeID(filmeInfo)
         .then(function (data) {
             $('#poster').attr(src,data.Poster);
 
@@ -39,7 +45,7 @@ function redireciona(){
   });
 }
 
-preencheFilme().then(() => {
+/*preencheFilme().then(() => {
   $('.carousel-inner')
     .find('.carousel-item')
     .click((e) => {
