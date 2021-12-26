@@ -1,0 +1,15 @@
+body {
+    background-color: #001C3F;
+}
+
+.container{
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+#optionsLog{
+    display: flex;
+    flex-direction: column;
+}
