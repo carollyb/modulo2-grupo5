@@ -12,3 +12,16 @@ $('.submit').click(function(e){
         alert('E-mail inválido, digite novamente!')
     }
 })
+
+
+let senha = document.querySelector('.passSubmit')
+senha.addEventListener('click', (e)=>{
+    e.preventDefault()
+    let email = $('#recupEmail').val()
+        if(email.indexOf('@')>-1){
+            alert('Um link de recuperação foi enviado para o seu e-mail!')
+            window.location.replace('../../index.html')
+        }else{
+            alert('Email inválido, por favor tente novamente!')
+        }
+})
