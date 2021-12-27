@@ -13,3 +13,100 @@ body {
     display: flex;
     flex-direction: column;
 }
+
+.navbar {
+    background-color: #001c3f;
+  }
+  
+  .navbar-toggler-icon {
+    filter: brightness(0) contrast(500) invert(1);
+  }
+  
+  .logo{
+    width: 125px;
+  }
+
+.informacoes{
+    margin-left: 470px;
+    width: 400px;
+    text-align: right;
+}
+
+.card-filmeInfo {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #060c21;
+    margin: 40px;
+  }
+  
+  .card-filmeInfo:before{
+    content: '';
+    position: absolute;
+    top: -2px;
+    left: -2px;
+    right: -2px;
+    bottom: -2px;
+    background: #fff;
+    z-index: -1;
+  }
+  
+  .card-filmeInfo:after{
+    content: '';
+    position: absolute;
+    top: -2px;
+    left: -2px;
+    right: -2px;
+    bottom: -2px;
+    background: #fff;
+    z-index: -2;
+    filter: blur(70px);
+  }
+  
+  
+  .card-filmeInfo .glass {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: block;
+    background: rgba(255,255,255,.1);
+    pointer-events: none;
+  }
+  
+  .card-filmeInfo:nth-child(1):before,
+  .card-filmeInfo:nth-child(1):after{
+    background: linear-gradient(235deg,#89ff00,#001c3f,#d40000);
+}
+.iconesFilme{
+  font-size: 25px;
+  color: white
+}
+
+.filmeNaoEncontrado{
+  font-size: 30px;
+  text-align: center;
+}
+
+@media(max-width:700px){
+  .main{
+    display: flex;
+    flex-direction: column;
+  }
+  .container{
+    display: flex;
+    flex-direction: column;
+    margin-left: 0;
+
+  }
+  .informacoes{
+    margin: 0;
+    text-align: center;
+  }
+  .footerInfo {
+    display: flex;
+    flex-direction: column;
+    }
+}

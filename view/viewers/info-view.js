@@ -23,12 +23,12 @@ function carregaFilme (){
       if (!data.Error) {
         console.log(data)
         exibeFilme(data)
-        localStorage.removeItem('id')
+        localStorage.removeItem('titulo')
       } else {
         console.log('este filme não existe')
         $('.container').hide()
         $('main').append(`<div>
-        <p class = "text-white">Filme não encontrado!</p>
+        <p class = "text-white filmeNaoEncontrado">Filme não encontrado!<br> Por favor, pesquise outro título no catálogo</p>
       </div>`)
       } 
     })
@@ -40,7 +40,7 @@ function carregaFilme (){
 function exibeFilme(data){
   $('#poster').attr('src',data.Poster);
   $('#title').append(`${data.Title}`);
-  $('#year').append(`${data.Year}`);
+  $('#year').append(`(${data.Year})`);
   $('#director').append(`${data.Director}`);
   $('#runtime').append(`${data.Runtime}`);
   $('#language').append(`${data.Language}`);
@@ -50,53 +50,3 @@ function exibeFilme(data){
 
 }
 carregaFilme();
-
-/*function preencheFilmeInfo() {
-  return new Promise((resolve, reject) => {
-    let filmes = catalog.getCatalogo();
-    for (let i = 0; i < filmes.length; i++) {
-      api
-        .buscaFilmeID(filmeId)
-        .then(function (data) {
-            $('#poster').attr(src,data.Poster);
-
-            $('#title').append(`${data.Title}`);
-
-            $('#year').append(`${data.Year}`);
-
-            $('#director').append(`${data.Director}`);
-
-            $('#runtime').append(`${data.Runtime}`);
-
-            $('#language').append(`${data.Language}`);
-
-            $('#plot').append(`${data.Plot}`);
-
-            $('#genre').append(`${data.Genre}`);
-
-            $('#rated').append(`${data.Rated}`);
-            
-          
-        })
-        .then(() => {
-          if (i == filmes.length - 1) {
-            resolve();
-          }
-        });
-    }
-  });
-}
-
-preencheFilme().then(() => {
-  $('.carousel-inner')
-    .find('.carousel-item')
-    .click((e) => {
-      console.log(e.target.id);
-    });
-
-  $('.catalogo')
-    .find('.card-filme')
-    .click((e) => {
-      console.log(e.target.id);
-    });
-});*/

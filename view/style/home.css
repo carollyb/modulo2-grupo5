@@ -175,7 +175,7 @@ body {
   cursor: pointer;
 }
  @media(max-width:700px){
-   footer{
+   .footerInfo{
      flex-direction: column;
    }
 
