@@ -13,7 +13,7 @@
     />
     <link rel="stylesheet" href="../style/info.css" />
   </head>
-  <body>
+  <body class="d-flex flex-column">
     <header>
       <nav class="navbar navbar-expand-lg navbar-light fixed-top border-bottom">
         <div class="container-fluid">
@@ -78,22 +78,32 @@
         </div>
       </nav>
     </header>
-    <main class="mt-5 p-5 main">
-      <div class="container">
+    <main class="d-flex container-xxl mt-5 p-5 main flex-grow-1">
+      <div
+        class="
+          container
+          d-flex
+          flex-xl-row
+          justify-content-xl-start
+          align-items-xl-center
+          flex-column
+          align-items-center
+        "
+      >
         <div id="optionsLog" class="card-filmeInfo">
           <div class="glass"></div>
           <div class="contentInfo"></div>
           <img id="poster" src="" />
         </div>
-        <div class="text-white informacoes">
+        <div class="text-white text-xl-end informacoes text-center">
           <p id="title" class="fs-2"></p>
           <p id="year"></p>
-          <p id="director">Dirigido por: </p>
-          <p id="runtime">Duração: </p>
-          <p id="language">Idioma: </p>
-          <p id="plot">Plot: </p>
-          <p id="genre">Gênero: </p>
-          <p id="rated">Classificação: </p>
+          <p id="director">Dirigido por:</p>
+          <p id="runtime">Duração:</p>
+          <p id="language">Idioma:</p>
+          <p id="plot">Plot:</p>
+          <p id="genre">Gênero:</p>
+          <p id="rated">Classificação:</p>
           <div>
             <a href="#" class="iconesFilme"
               ><ion-icon name="heart-circle-sharp"></ion-icon
