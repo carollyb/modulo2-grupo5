@@ -54,7 +54,7 @@ color: #294795;
     transition: .3s ease-in-out;
 }
 
-.submit{
+.submit, .passSubmit{
     height: 48px;
     width: 100%;
     outline: none;
@@ -74,13 +74,6 @@ color: #294795;
 
 .emailInfo{
     padding: 10px;
-}
-
-.passSubmit{
-    height: 48px;
-    width: 60%;
-    outline: none;
-    margin-bottom: 32px;
 }
 
 @media screen and (max-width:700px){
