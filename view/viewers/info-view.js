@@ -1,14 +1,14 @@
 function exibeFilme(data) {
   comFilme();
   $('#poster').attr('src', data.Poster);
-  $('#title').append(`${data.Title}`);
-  $('#year').append(`(${data.Year})`);
-  $('#director').append(`${data.Director}`);
-  $('#runtime').append(`${data.Runtime}`);
-  $('#language').append(`${data.Language}`);
-  $('#plot').append(`${data.Plot}`);
-  $('#genre').append(`${data.Genre}`);
-  $('#rated').append(`${data.Rated}`);
+  $('#title').text(`${data.Title}`);
+  $('#year').text(`(${data.Year})`);
+  $('#director').text(`Dirigido por: ${data.Director}`);
+  $('#runtime').text(`Duração: ${data.Runtime}`);
+  $('#language').text(`Idioma: ${data.Language}`);
+  $('#plot').text(`Plot: ${data.Plot}`);
+  $('#genre').text(`Gênero: ${data.Genre}`);
+  $('#rated').text(`Classificação: ${data.Rated}`);
 }
 
 function semFilme() {
