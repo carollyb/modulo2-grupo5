@@ -5,23 +5,40 @@ function validaEmail(email){
 
 $('.submit').click(function(e){
     e.preventDefault()
-    var ehEmail = validaEmail($('#email').val())
-    if(ehEmail == true){
+    let confirmEmail = validaEmail($('#email').val())
+    if(confirmEmail == true){
         window.location.replace('../../index.html')
     }else{
-        alert('E-mail inválido, digite novamente!')
+        $('#email').addClass('erro')
+        $('#email').attr("placeholder","Email inválido, digite novamente!")
     }
 })
 
+$('#email').keyup(function(){
+    $('#email').removeClass('erro')
+})
 
-let senha = document.querySelector('.passSubmit')
-senha.addEventListener('click', (e)=>{
+$('.passSubmit').click(function(e){
     e.preventDefault()
-    let email = $('#recupEmail').val()
-        if(email.indexOf('@')>-1){
-            alert('Um link de recuperação foi enviado para o seu e-mail!')
-            window.location.replace('../../index.html')
-        }else{
-            alert('Email inválido, por favor tente novamente!')
-        }
+    let recupEmail = validaEmail($('#recupEmail').val())
+    if(recupEmail == true){
+        alert('Um link de recuperação foi enviado para o seu e-mail!')
+    }else{
+        $('#recupEmail').addClass('erro')
+        $('#recupEmail').attr("placeholder","Email inválido, digite novamente!")
+    }
+})
+
+$('#email').keyup(function(){
+    $('#email').removeClass('erro')
+})
+
+$('.buscarFilme').click((e) => {
+    e.preventDefault();
+    let titulo = $('.inputFilme').val();
+    if (titulo != '') {
+      localStorage.setItem('titulo',titulo)
+      $('.inputFilme').val('')
+      window.location.assign('info.html')
+    }
 })

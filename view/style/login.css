@@ -3,7 +3,6 @@
 body {
     margin: 0;
     padding: 0;
-    font-family: sans-serif;
 }
 
 .login, .passwordForgot {
@@ -15,17 +14,20 @@ body {
 
 .loginContainer, .passwordContainer {
     min-height: 400px;
-    width: 300px;
+    width: 400px;
     box-sizing: border-box;
     padding: 32px;
     border-radius: 8px;
     display: flex;
     flex-direction: column;
     align-items: center;
+    background: rgba(255, 255, 255, 0.7);
 }
 
 .loginTitle, .passTitle {
 margin-bottom: 32px;
+font-weight: bold;
+color: #294795;
 }
 
 .loginForm {
@@ -52,12 +54,7 @@ margin-bottom: 32px;
     transition: .3s ease-in-out;
 }
 
-.check{
-    position: absolute;
-    display: flex;
-}
-
-.submit{
+.submit, .passSubmit{
     height: 48px;
     width: 100%;
     outline: none;
@@ -66,6 +63,7 @@ margin-bottom: 32px;
 
 #forgotPass{
     text-decoration: none;
+    color: #FFFFFF;
 }
 
 .passForm{
@@ -78,9 +76,12 @@ margin-bottom: 32px;
     padding: 10px;
 }
 
-.passSubmit{
-    height: 48px;
-    width: 60%;
-    outline: none;
-    margin-bottom: 32px;
+.erro{
+    border: solid 1px red;
+}
+
+@media screen and (max-width:700px){
+    .login{
+        width: 100%;
+    }
 }
