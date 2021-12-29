@@ -1,87 +1,92 @@
 /*CSS referente páginas de login e recuperação de senha*/
 
 body {
-    margin: 0;
-    padding: 0;
+  margin: 0;
+  padding: 0;
 }
 
-.login, .passwordForgot {
-    height: 100vh;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+.login,
+.passwordForgot {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
-.loginContainer, .passwordContainer {
-    min-height: 400px;
-    width: 400px;
-    box-sizing: border-box;
-    padding: 32px;
-    border-radius: 8px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    background: rgba(255, 255, 255, 0.7);
+.loginContainer,
+.passwordContainer {
+  min-height: 400px;
+  width: 400px;
+  box-sizing: border-box;
+  padding: 32px;
+  border-radius: 8px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background: rgba(255, 255, 255, 0.7);
 }
 
-.loginTitle, .passTitle {
-margin-bottom: 32px;
-font-weight: bold;
-color: #294795;
+.loginTitle,
+.passTitle {
+  margin-bottom: 32px;
+  font-weight: bold;
+  color: #294795;
 }
 
 .loginForm {
-    width: 100%;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
 }
 
 .loginInput {
-    height: 48px;
+  height: 48px;
+  width: 100%;
+  box-sizing: border-box;
+  padding-left: 8px;
+  /* border: unset; */
+  /* outline: none; */
+}
+
+.loginInputBorder {
+  height: 1px;
+  width: 100%;
+  margin-bottom: 16px;
+  transition: 0.3s ease-in-out;
+}
+
+.submit,
+.passSubmit {
+  height: 48px;
+  width: 100%;
+  outline: none;
+  margin-bottom: 32px;
+}
+
+#forgotPass {
+  text-decoration: none;
+  color: #ffffff;
+}
+
+.passForm {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+.emailInfo {
+  padding: 10px;
+}
+
+.erro {
+  border: solid 2px red;
+  outline-color: red;
+}
+
+@media screen and (max-width: 700px) {
+  .login {
     width: 100%;
-    box-sizing: border-box;
-    padding-left: 8px;
-    border: unset;
-    outline: none;
-}
-
-.loginInputBorder{
-    height: 1px;
-    width: 100%;
-    margin-bottom: 16px;
-    transition: .3s ease-in-out;
-}
-
-.submit, .passSubmit{
-    height: 48px;
-    width: 100%;
-    outline: none;
-    margin-bottom: 32px;
-}
-
-#forgotPass{
-    text-decoration: none;
-    color: #FFFFFF;
-}
-
-.passForm{
-    width: 100%;
-    display: flex;
-    flex-direction: column;
-}
-
-.emailInfo{
-    padding: 10px;
-}
-
-.erro{
-    border: solid 1px red;
-}
-
-@media screen and (max-width:700px){
-    .login{
-        width: 100%;
-    }
+  }
 }

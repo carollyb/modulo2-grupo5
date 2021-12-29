@@ -17,11 +17,19 @@ function preencheFilme() {
         })
         .then(() => {
           if (i == filmes.length - 1) {
+            $('.destaque').removeClass('d-none');
+            $('erro-servidor').remove();
             resolve();
           }
         })
-        .catch(() => {
-          //Exibir mensagem que servidor esta fora ou algo parecido;
+        .catch((data) => {
+          console.log(data);
+          if (i == filmes.length - 1) {
+            $('.destaque').addClass('d-none');
+            $('main').prepend(
+              `<p class="text-white erro-servidor">Ops, parece que algo de errado não esta certo! O servidor pode ter falhado... Tente recarregar a página.</p>`
+            );
+          }
         });
     }
   });

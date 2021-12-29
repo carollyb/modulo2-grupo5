@@ -4,6 +4,10 @@ body {
   background-color: #001c3f;
 }
 
+main {
+  padding-top: 80px;
+}
+
 .navbar {
   background-color: #001c3f;
 }
