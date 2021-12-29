@@ -92,12 +92,10 @@ body {
 /*Contact page style*/
 
 .img{
-  width: auto;
-  height: 13rem;
+  width: 10rem;
+  height: 10rem;
 
 }
 
-.social-media{
-  list-style: none;
-}
+
 
