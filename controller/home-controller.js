@@ -1,16 +1,28 @@
 const catalog = new Catalogo();
+const api = new Api();
 
-function preencheFilme(){
-    let filmes = catalog.getCatalogo()
-    for (i=0;i<filmes.length;i++){
-        buscaFilmeID(filmes[i]).then(function(data){
-            $(document).ready(function(){            
-                $("#carouselExampleCaptions").on('slide.bs.carousel',function(event){
-                })
-            })
-            $(".catalogo").append(`<div><img src="${data.Poster}" alt=""><p>${data.Title}</p></div>`)
+//Busca o catalogo com 15 filmes, solicita as informações na API e exibe na tela
+function preencheFilme() {
+  return new Promise((resolve, reject) => {
+    let filmes = catalog.getCatalogo();
+    for (let i = 0; i < filmes.length; i++) {
+      api
+        .buscaFilmeID(filmes[i])
+        .then(function (data) {
+          if (i < 3) {
+            criaItemCarrossel(data);
+          } else {
+            criaItemCatalogo(data);
+          }
         })
+        .then(() => {
+          if (i == filmes.length - 1) {
+            resolve();
+          }
+        })
+        .catch(() => {
+          //Exibir mensagem que servidor esta fora ou algo parecido;
+        });
     }
+  });
 }
-
-preencheFilme()

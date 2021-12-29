@@ -13,7 +13,7 @@
     />
     <link rel="stylesheet" href="../style/info.css" />
   </head>
-  <body>
+  <body class="d-flex flex-column">
     <header>
       <nav class="navbar navbar-expand-lg navbar-light fixed-top border-bottom">
         <div class="container-fluid">
@@ -78,22 +78,43 @@
         </div>
       </nav>
     </header>
-    <main class="mt-5 p-5 main">
-      <div class="container">
+    <main
+      class="
+        d-flex
+        container-xxl
+        mt-5
+        p-5
+        main
+        flex-grow-1
+        justify-content-center
+      "
+    >
+      <div
+        class="
+          container
+          d-flex
+          flex-xl-row
+          justify-content-xl-between
+          align-items-xl-center
+          flex-column
+          align-items-center
+          displayFilme
+        "
+      >
         <div id="optionsLog" class="card-filmeInfo">
           <div class="glass"></div>
           <div class="contentInfo"></div>
           <img id="poster" src="" />
         </div>
-        <div class="text-white informacoes">
+        <div class="text-white text-xl-end informacoes text-center">
           <p id="title" class="fs-2"></p>
           <p id="year"></p>
-          <p id="director">Dirigido por: </p>
-          <p id="runtime">Duração: </p>
-          <p id="language">Idioma: </p>
-          <p id="plot">Plot: </p>
-          <p id="genre">Gênero: </p>
-          <p id="rated">Classificação: </p>
+          <p id="director"></p>
+          <p id="runtime"></p>
+          <p id="language"></p>
+          <p id="plot"></p>
+          <p id="genre"></p>
+          <p id="rated"></p>
           <div>
             <a href="#" class="iconesFilme"
               ><ion-icon name="heart-circle-sharp"></ion-icon
@@ -106,6 +127,20 @@
             ></a>
           </div>
         </div>
+      </div>
+      <div
+        class="
+          d-flex
+          justify-center
+          align-items-center
+          text-center
+          semFilme
+          d-none
+        "
+      >
+        <p class="text-white text-center">
+          Filme não encontrado, busque por outro filme na barra superior ☝🏼
+        </p>
       </div>
     </main>
     <footer class="border-top text-center text-white">
@@ -132,7 +167,7 @@
       referrerpolicy="no-referrer"
     ></script>
     <script src="../../model/api.js"></script>
-    <script src="./controller/home.js"></script>
+    <script src="../../controller/info-controller.js"></script>
     <script src="../viewers/info-view.js"></script>
     <script
       type="module"
