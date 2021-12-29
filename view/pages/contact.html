@@ -1,18 +1,91 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link
+    href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css"
+    rel="stylesheet"
+    integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3"
+    crossorigin="anonymous"
+  />
+  <link rel="stylesheet" href="../style/home.css" />
     <title>Contato</title>
 </head>
 <body>
+    <header>
+        <nav class="navbar navbar-expand-lg navbar-light fixed-top border-bottom">
+          <div class="container-fluid">
+            <a class="navbar-brand text-warning logo" href="../../index.html"
+              ><img src="../../images/logo-resiliaflix-2.png" class="w-100" />
+            </a>
+            <button
+              class="navbar-toggler"
+              type="button"
+              data-bs-toggle="collapse"
+              data-bs-target="#navbarSupportedContent"
+              aria-controls="navbarSupportedContent"
+              aria-expanded="false"
+              aria-label="Toggle navigation"
+            >
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+              <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                <li class="nav-item">
+                  <a
+                    class="nav-link active text-white"
+                    aria-current="page"
+                    href="./form.html"
+                    >Cadastre-se</a
+                  >
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link text-white" href="./login.html"
+                    >Login</a
+                  >
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link text-white" href="./contact.html"
+                    >Contato</a
+                  >
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link text-white" href="../../index.html">Serviços</a>
+                </li>
+              </ul>
+              <form class="d-flex">
+                <input
+                  class="form-control me-2 rounded-pill opacity-25 inputFilme"
+                  type="search"
+                  placeholder="digite um filme"
+                  aria-label="Search"
+                />
+                <button
+                  class="
+                    btn btn-outline-success
+                    rounded-pill
+                    bg-light
+                    buscarFilme
+                  "
+                  type="submit"
+                >
+                  buscar
+                </button>
+              </form>
+            </div>
+          </div>
+        </nav>
+      </header>
+
+
     <main id="main">
-        <div class="main-container">
+        <div class="main-container d-flex pt-5 flex-wrap justify-content-around">
          <div class="contacts"> 
-            <div class="developers">
-                <img src="../../images/carolly.jpg" class="img" >
-                   <h2>Carolly Barbosa</h2>
+            <div class="developers mt-5">
+                <img src="../../images/carolly.jpg" class="img rounded-circle" >
+                   <h4 class ="nome text-white mt-3">Carolly Barbosa</h4>
                      <ul class = "social-media">
                          <li><a href="https://www.linkedin.com/in/carolly-barbosa-283a7a1b9/" class="btn" target="_blank">LinkedIn</a></li>
                          <li><a href="https://github.com/carollyb" class="btn" target="_blank">Github</a></li>
@@ -21,9 +94,9 @@
          </div>
     
             <div class="contacts">
-                <div class="developers">
-                   <img src="../../images/ivan.jpg" class="img" >
-                      <h2>Ivan Geier</h2>
+                <div class="developers mt-5">
+                   <img src="../../images/ivan.jpg" class="img rounded-circle" alt="">
+                      <h4 class ="nome text-white mt-3">Ivan Geier</h4>
                           <ul class = "social-media">
                             <li><a href="https://www.linkedin.com/in/ivan-geier-b3603244/" class="btn" target="_blank">LinkedIn</a></li>
                             <li><a href="https://github.com/ivangeier" class="btn" target="_blank">Github</a></li>
@@ -32,9 +105,9 @@
             </div>
 
             <div class="contacts"> 
-                <div class="developers">
-                    <img src="../../images/priscila.jpg" class="img" >
-                      <h2>Priscila Rossetto</h2>
+                <div class="developers mt-5">
+                    <img src="../../images/priscila.jpg" class=" img rounded-circle" >
+                      <h4 class ="nome text-white mt-3">Priscila Rossetto</h4>
                            <ul class = "social-media">
                              <li><a href="https://www.linkedin.com/in/priscilarossetto/" class="btn" target="_blank">LinkedIn</a></li>
                              <li><a href="https://github.com/priscilarossetto" class="btn" target="_blank">Github</a></li>
@@ -43,9 +116,9 @@
             </div>
         
                 <div class="contacts">
-                    <div class="developers">
-                        <img src="../../images/sabrina.jpg" class="img" >
-                           <h2>Sabrina Couto</h2>
+                    <div class="developers mt-5">
+                        <img src="../../images/sabrina.jpg" class="img rounded-circle" >
+                           <h4 class ="nome text-white mt-3">Sabrina Couto</h4>
                              <ul class = "social-media">
                                  <li><a href="https://www.linkedin.com/in/sabrinacoutolima" class="btn" target="_blank">LinkedIn</a></li>
                                  <li><a href="https://github.com/sabrinacouto" class="btn" target="_blank">Github</a></li>
@@ -54,9 +127,9 @@
                 </div>  
 
                 <div class="contacts">
-                    <div class="developers">
-                    <img src="../../images/sinaria.jpg" class="img" >
-                      <h2>Sinária Carvalho</h2>
+                    <div class="developers mt-5">
+                    <img src="../../images/sinaria.jpg" class="img rounded-circle" >
+                      <h4 class ="nome text-white mt-3">Sinária Carvalho</h4>
                          <ul class = "social-media">
                              <li><a href="https://www.linkedin.com/in/sin%C3%A1ria-carvalho-1a180a18b/" class="btn" target="_blank">LinkedIn</a></li>
                              <li><a href="https://github.com/Sinariac" class="btn" target="_blank">Github</a></li>
@@ -66,6 +139,18 @@
         </div>
         
     </main>
+    <br>
+    <br>
+    <br>
+
+      <footer class="border-top text-center text-white">
+          <div class="mt-2 d-flex justify-content-evenly footerInfo">
+            <p>Boas festas!</p>
+            <p>® Todos os direitos reservados</p>
+            <p>Web Dev FullStack Resilia</p>
+          </div>
+       </footer>
+
     
 </body>
 </html>

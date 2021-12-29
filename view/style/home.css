@@ -88,3 +88,16 @@ body {
     flex-direction: column;
   }
 }
+
+/*Contact page style*/
+
+.img{
+  width: auto;
+  height: 13rem;
+
+}
+
+.social-media{
+  list-style: none;
+}
+
