@@ -5,12 +5,17 @@ function validaEmail(email){
 
 $('.submit').click(function(e){
     e.preventDefault()
-    let ehEmail = validaEmail($('#email').val())
-    if(ehEmail == true){
+    let confirmEmail = validaEmail($('#email').val())
+    if(confirmEmail == true){
         window.location.replace('../../index.html')
     }else{
-        alert('E-mail inválido, digite novamente!')
+        $('#email').addClass('erro')
+        $('#email').attr("placeholder","Email inválido, digite novamente!")
     }
+})
+
+$('#email').keyup(function(){
+    $('#email').removeClass('erro')
 })
 
 $('.passSubmit').click(function(e){
@@ -19,8 +24,13 @@ $('.passSubmit').click(function(e){
     if(recupEmail == true){
         alert('Um link de recuperação foi enviado para o seu e-mail!')
     }else{
-        alert('Email inválido, por favor tente novamente!')
+        $('#recupEmail').addClass('erro')
+        $('#recupEmail').attr("placeholder","Email inválido, digite novamente!")
     }
+})
+
+$('#email').keyup(function(){
+    $('#email').removeClass('erro')
 })
 
 $('.buscarFilme').click((e) => {
