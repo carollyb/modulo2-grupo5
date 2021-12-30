@@ -91,11 +91,37 @@ body {
 
 /*Contact page style*/
 
-.img{
+.card-img-top{
   width: 10rem;
   height: 10rem;
-
 }
+
+.nome-dev{
+  font-size: 20px; 
+}
+
+.developers:hover{
+   transform: scale(1.05);
+   transition: 350ms cubic-bezier(.17,-1.5,.65,2.48);
+}
+
+.developers{
+  background: linear-gradient(235deg, #e6553c, #001c3f, #00bcd4, #89ff00);
+}
+
+.fa-linkedin:hover{
+  color: #001c3f;
+}
+
+.fa-github:hover{
+  color: #001c3f;
+}
+
+
+
+
+
+
 
 
 
