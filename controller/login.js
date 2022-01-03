@@ -33,13 +33,3 @@ $('.passSubmit').click(function (e) {
 $('#recupEmail').keyup(function () {
   $('#recupEmail').removeClass('erro');
 });
-
-$('.buscarFilme').click((e) => {
-  e.preventDefault();
-  let titulo = $('.inputFilme').val();
-  if (titulo != '') {
-    localStorage.setItem('titulo', titulo);
-    $('.inputFilme').val('');
-    window.location.assign('info.html');
-  }
-});

@@ -20,7 +20,6 @@ function comFilme() {
   $('.displayFilme').removeClass('d-none');
   $('.semFilme').addClass('d-none');
 }
-
 $('.buscarFilme').click((e) => {
   e.preventDefault();
   carregaFilme($('.inputFilme').val());
