@@ -31,10 +31,6 @@ body {
   
   .developers{
     min-width: 208px;
-    display: flex;
-    flex-direction: column;
-    justify-content: flex-start;
-    align-items: center;
     background: linear-gradient(235deg, #e6553c, #001c3f, #00bcd4, #89ff00);
   }
   
