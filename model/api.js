@@ -1,6 +1,6 @@
 class Api {
   api_key = 'c30ccb91';
-  url = `http://www.omdbapi.com/?apikey=${this.api_key}&`;
+  url = `https://www.omdbapi.com/?apikey=${this.api_key}&`;
 
   buscaFilme(nomeFilme) {
     return new Promise((resolve, reject) => {
