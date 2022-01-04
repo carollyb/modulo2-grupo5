@@ -26,10 +26,15 @@ body {
   
   .developers:hover{
      transform: scale(1.05);
-     transition: 350ms cubic-bezier(.17,-1.5,.65,2.48);
+     transition: 500ms cubic-bezier(.39,.66,.83,.67);
   }
   
   .developers{
+    min-width: 208px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
     background: linear-gradient(235deg, #e6553c, #001c3f, #00bcd4, #89ff00);
   }
   
@@ -39,4 +44,27 @@ body {
   
   .fa-github:hover{
     color: #001c3f;
+  }
+
+  @media (max-width: 700px) {
+    .imagemLuzes{
+      display: none;
+    }
+    .main-container{
+      display: flex;
+      flex-direction: column;
+      justify-content: flex-start;
+      align-items: center;
+    }
+    .developers{
+      min-width: 208px;
+      margin: 0;
+      display: flex;
+      flex-direction: column;
+      justify-content: flex-start;
+      align-items: center;
+    }
+    .footerInfo {
+      flex-direction: column;
+    }
   }

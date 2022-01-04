@@ -29,3 +29,24 @@ $('#cep').blur(function () {
 $('#cep').keyup(function () {
   $('#cep').removeClass('erro');
 });
+
+function validaEmail(email) {
+  let regex =
+    /[a-z0-9!#$%&'*+/=?^_`{|}~-]+(?:\.[a-z0-9!#$%&'*+/=?^_`{|}~-]+)*@(?:[a-z0-9](?:[a-z0-9-]*[a-z0-9])?\.)+[a-z0-9](?:[a-z0-9-]*[a-z0-9])?/gi;
+  return regex.test(email);
+}
+
+$('#botao').click(function (e) {
+  e.preventDefault();
+  let confirmEmail = validaEmail($('#email').val());
+  if (confirmEmail == true) {
+    window.location.replace('../../index.html');
+  } else {
+    $('#email').addClass('erro');
+    $('#email').attr('placeholder', 'Email inválido, digite novamente!');
+  }
+});
+
+$('#email').keyup(function () {
+  $('#email').removeClass('erro');
+});
