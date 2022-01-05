@@ -1,169 +1,157 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link
       href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css"
       rel="stylesheet"
       integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3"
       crossorigin="anonymous"
     />
-    <link rel="stylesheet" href="../style/home.css">
-    <link rel="stylesheet" href="../../view/style/form.css">
+    <link rel="stylesheet" href="../style/home.css" />
+    <link rel="stylesheet" href="../../view/style/form.css" />
     <title>ResiliaFlix: Cadastro</title>
     <link
-    rel="shortcut icon"
-    href="../../images/popcorn.ico"
-    type="image/x-icon"
-  />
-</head>
-<body>
+      rel="shortcut icon"
+      href="../../images/popcorn.ico"
+      type="image/x-icon"
+    />
+  </head>
+  <body>
     <header>
-        <nav class="navbar navbar-expand-lg navbar-light fixed-top border-bottom">
-          <div class="container-fluid">
-            <a class="navbar-brand text-warning logo" href="../../index.html"
-              ><img src="../../images/logo-resiliaflix-2.png" class="w-100" />
-            </a>
-            <button
-              class="navbar-toggler"
-              type="button"
-              data-bs-toggle="collapse"
-              data-bs-target="#navbarSupportedContent"
-              aria-controls="navbarSupportedContent"
-              aria-expanded="false"
-              aria-label="Toggle navigation"
-            >
-              <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse" id="navbarSupportedContent">
-              <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-                <li class="nav-item">
-                  <a
-                    class="nav-link active text-white"
-                    aria-current="page"
-                    href="./form.html"
-                    >Cadastre-se</a
-                  >
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link text-white" href="./login.html"
-                    >Login</a
-                  >
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link text-white" href="./contact.html"
-                    >Contato</a
-                  >
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link text-white" href="../../index.html#servicos">Serviços</a>
-                </li>
-              </ul>
-              <form class="d-flex">
-                <input
-                  class="form-control me-2 rounded-pill opacity-25 inputFilme"
-                  type="search"
-                  placeholder="digite um filme"
-                  aria-label="Search"
-                />
-                <button
-                  class="
-                    btn btn-outline-success
-                    rounded-pill
-                    bg-light
-                    buscarFilme
-                  "
-                  type="submit"
+      <nav class="navbar navbar-expand-lg navbar-light fixed-top border-bottom">
+        <div class="container-fluid">
+          <a class="navbar-brand text-warning logo" href="../../index.html"
+            ><img src="../../images/logo-resiliaflix-2.png" class="w-100" />
+          </a>
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a
+                  class="nav-link active text-white"
+                  aria-current="page"
+                  href="./form.html"
+                  >Cadastre-se</a
                 >
-                  buscar
-                </button>
-              </form>
-            </div>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link text-white" href="./login.html">Login</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link text-white" href="./contact.html">Contato</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link text-white" href="../../index.html#servicos"
+                  >Serviços</a
+                >
+              </li>
+            </ul>
+            <form class="d-flex">
+              <input
+                class="form-control me-2 rounded-pill opacity-25 inputFilme"
+                type="search"
+                placeholder="digite um filme"
+                aria-label="Search"
+              />
+              <button
+                class="btn btn-outline-success rounded-pill bg-light buscarFilme"
+                type="submit"
+              >
+                buscar
+              </button>
+            </form>
           </div>
-        </nav>
-      </header>
+        </div>
+      </nav>
+    </header>
     <main>
-    <div id="form">
+      <div id="form">
         <form>
-        <div>
+          <div class="texto-servicos">
             <h1>Cadastre-se</h1>
-        <p> Para informações sobre o filme selecionado, faça seu cadastro aqui:</p>
-            <label><strong>Nome</strong></label> <br>
-            <input type="text" name="nome" id="nome" required> 
-        </div>
-        <div>
-            <label><strong>RG</strong></label> <br>
-            <input type="text" name="rg" id="rg"> 
-        </div>
-        <div>
-            <label><strong>CEP</strong></label> <br>
-            <input type="text" name="cep" id="cep" maxlength="8"> 
-        </div>
-        <div>
-            <label><strong>Estado</strong></label> <br>
-            <input type="text" name="estado" id="estado"> 
+            <p>
+              Para informações sobre o filme selecionado, faça seu cadastro
+              aqui:
+            </p>
+          </div>
+          <div class="container">
+            <div class="coluna1">
+              <label><strong>Nome</strong></label>
+              <input type="text" name="nome" id="nome" required />
 
-        </div>
-        <div>
-            <label><strong>Cidade</strong></label> <br>
-            <input type="text" name="cidade" id="cidade"> 
-
-        </div>
-        <div>
-            <label><strong>Bairro</strong></label> <br>
-            <input type="text" name="bairro" id="bairro"> 
-
-        </div>
-        <div>
-            <label><strong>Rua</strong></label> <br>
-            <input type="text" name="rua" id="rua"> 
-
-        </div>
-        <div>
-            <label><strong>Número</strong></label> <br>
-            <input type="text" name="numero" id="numero"> 
-
-        </div>
-        <div>
-            <label><strong>Complemento</strong></label> <br>
-            <input type="text" name="complemento" id="complemento"> 
-
-        </div>
-        <div>
-            <label><strong>Email</strong></label> <br>
-            <input type="email" name="email" id="email" required> 
-        </div>
-        <div>
-            <label><strong>Senha</strong></label> <br>
-            <input type="password" name="senha" id="senha"> 
-        </div>
-        <div>
-            <label><strong>Confirme sua senha</strong></label> <br>
-            <input type="password" name="confirmaçao" id="confirmaçao"> 
-        </div> <br>
-    
-            <button class="btn btn-lg btn-block btn-danger" type="submit" id="botao">Enviar</button> 
-        
-</form>
-</div>
-</main>
-<footer class="border-top text-center text-white">
-    <div class="mt-2 d-flex justify-content-evenly footerInfo">
-      <p>Boas festas!</p>
-      <p>® Todos os direitos reservados</p>
-      <p>Web Dev FullStack Resilia</p>
-    </div>
-  </footer>
-<script src="https://code.jquery.com/jquery-3.6.0.min.js" ></script>
-<script
+              <label><strong>RG</strong></label>
+              <input type="text" name="rg" id="rg" />
+              <label><strong>Email</strong></label>
+              <input type="email" name="email" id="email" required />
+              <label><strong>Senha</strong></label>
+              <input type="password" name="senha" id="senha" />
+              <label><strong>Confirme sua senha</strong></label>
+              <input type="password" name="confirmaçao" id="confirmaçao" />
+            </div>
+            <div class="coluna2">
+              
+                <label><strong>CEP</strong></label>
+                <input type="text" name="cep" id="cep" maxlength="8" />
+              
+                <label><strong>Estado</strong></label>
+                <input type="text" name="estado" id="estado" />
+              
+                <label><strong>Cidade</strong></label>
+                <input type="text" name="cidade" id="cidade" />
+              
+                <label><strong>Bairro</strong></label>
+                <input type="text" name="bairro" id="bairro" />
+             
+                <label><strong>Rua</strong></label>
+                <input type="text" name="rua" id="rua" />
+              
+                <label><strong>Número</strong></label>
+                <input type="text" name="numero" id="numero" />
+              
+                <label><strong>Complemento</strong></label>
+                <input type="text" name="complemento" id="complemento" /> <br>
+                
+              </div>
+            </div> <br>      
+            <button
+            class="btn btn-lg btn-block btn-danger"
+            type="submit"
+            id="botao"
+          >
+            Enviar
+          </button>
+          
+        </form>
+      </div>
+    </main>
+    <footer class="border-top text-center text-white">
+      <div class="mt-2 d-flex justify-content-evenly footerInfo">
+        <p>Boas festas!</p>
+        <p>® Todos os direitos reservados</p>
+        <p>Web Dev FullStack Resilia</p>
+      </div>
+    </footer>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script
       src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
       integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
       crossorigin="anonymous"
     ></script>
-<script src="../../model/api.js" ></script>
-<script src="../../controller/form.js"></script>
-<script src="../../controller/menu-controller.js"></script>
-</body>
+    <script src="../../model/api.js"></script>
+    <script src="../../controller/form.js"></script>
+    <script src="../../controller/menu-controller.js"></script>
+  </body>
 </html>
