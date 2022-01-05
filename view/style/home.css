@@ -88,6 +88,15 @@ main {
   background: linear-gradient(235deg, #ff0202, #001c3f, #fbff03);
 }
 
+.logo:hover{
+  transition: 2s;
+  transform: scale(1.1);
+}
+
+.nav-link:hover{
+  filter: drop-shadow(2px 1px 4px #1ee0d0);
+}
+
 .filme:hover {
   cursor: pointer;
 }

@@ -29,3 +29,12 @@ main {
   border: solid 2px red;
   outline-color: red;
 }
+
+.logo:hover{
+  transition: 2s;
+  transform: scale(1.1);
+}
+
+.nav-link:hover{
+  filter: drop-shadow(2px 1px 4px #1ee0d0);
+}

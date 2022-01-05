@@ -1,4 +1,4 @@
-# Projeto de encerramento de módulo - ResiliaFlix - Grupo 5 🍿
+# Projeto Módulo 2 - ResiliaFlix - Grupo 5 🍿
 ## Desenvolvimento front end da Resilia Flix, uma aplicação de streaming de filmes
 ### Conceito
 - [x] Streaming de filmes por temporada, curados de acordo com a época. Ex.: Natal, férias de verão, etc
@@ -33,12 +33,12 @@ Formulário com:
 #### Página de contato:
 - [x] Deve conter contato dos alunos envolvidos no projeto;
 #### Páginas "mockadas":
-        Página de log in:
+- Página de log in:
 - [x] Usuário (e-mail);
 - [x] Senha;
 - [x] Deve validar o campo de entrada como e-mail;
 - [x] Deve conter link para página de recuperação de senha (esqueci minha senha).
-        Página de recuperação de senha:
+- Página de recuperação de senha:
 - [x] e-mail de cadastro;
 - [x] Deve validar o campo de entrada como e-mail;
 - [x] Deve exibir mensagem após submissão de formulário de e-mail enviado.
