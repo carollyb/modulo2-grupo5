@@ -91,6 +91,12 @@ main {
 .filme:hover {
   cursor: pointer;
 }
+
+.card-filme:hover{
+  transform: scale(1.05);
+  transition: 500ms cubic-bezier(.39,.66,.83,.67);
+}
+
 @media (max-width: 700px) {
   .textoServ{
     flex-wrap: wrap;

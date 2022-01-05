@@ -17,7 +17,7 @@ function criaItemCatalogo(data) {
   `);
 }
 
-// Preenche a tela comm os filmes e adiciona o evento Click nos filmes
+// Preenche a tela com os filmes e adiciona o evento Click nos filmes
 preencheFilme().then(() => {
   $('.carousel-item').first().addClass('active');
   $('.filme').click((e) => {
