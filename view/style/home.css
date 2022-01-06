@@ -1,7 +1,10 @@
 @import url('https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Baloo+Da+2:wght@500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:wght@300&display=swap');
 
 body {
-  background-color: #001c3f;
+  background-image: url(../../images/blurry-gradient-haikei.png);
+  background-size: cover;
+  background-position: center;
 }
 
 main {
@@ -9,7 +12,9 @@ main {
 }
 
 .navbar {
-  background-color: #001c3f;
+  font-family: 'Be Vietnam Pro', sans-serif;
+  background-color: transparent;
+  transition: 1s;
 }
 
 .navbar-toggler-icon {
@@ -19,8 +24,33 @@ main {
 .logo {
   width: 125px;
 }
-.serv {
-  font-family: 'Abril Fatface', cursive;
+
+.inputFilme{
+  background-color: transparent;
+}
+
+.btn{
+  background-color: #060c21;
+  color: white;
+  border-color: white;
+}
+
+.destaque{
+  height: 700px;
+}
+.carousel-item img{
+  border-radius: 15px;
+  padding: 6px;
+  filter: drop-shadow(2px 1px 4px #1ee0d0);
+}
+
+.tituloServ{
+  font-size: 80px;
+  color:#ffffff;
+}
+
+.serv, .paragServ {
+  font-family: 'Be Vietnam Pro', sans-serif;
 }
 
 .textoServ{
@@ -88,13 +118,32 @@ main {
   background: linear-gradient(235deg, #ff0202, #001c3f, #fbff03);
 }
 
+.footerInfo{
+  font-family: 'Be Vietnam Pro', sans-serif;
+  background-color: #060c21;
+  height: 4em;
+  border-radius: 20px;
+}
+
+.footerInfo p{
+    margin-top: 20px;
+}
+
 .logo:hover{
   transition: 2s;
   transform: scale(1.1);
 }
-
+.navbar:hover{
+  background-color: #060c21;
+  margin: 20px;
+  border-radius: 50px;
+}
 .nav-link:hover{
   filter: drop-shadow(2px 1px 4px #1ee0d0);
+}
+
+.carousel-control-next-icon:hover, .carousel-control-prev-icon:hover{
+  filter: drop-shadow(5px 5px 6px #1ee0d0);
 }
 
 .filme:hover {
@@ -113,5 +162,6 @@ main {
   }
   .footerInfo {
     flex-direction: column;
+    height: auto;
   }
 }

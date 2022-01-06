@@ -1,10 +1,14 @@
+@import url('https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:wght@300&display=swap');
+
 html,
 body {
   height: 100vh;
 }
 
 body {
-  background-color: #001c3f;
+  background-image: url(../../images/blurry-gradient-haikei.png);
+  background-size: cover;
+  background-position: center;
 }
 
 #optionsLog {
@@ -13,7 +17,9 @@ body {
 }
 
 .navbar {
-  background-color: #001c3f;
+  font-family: 'Be Vietnam Pro', sans-serif;
+  background-color: transparent;
+  transition: 1s;
 }
 
 .navbar-toggler-icon {
@@ -22,6 +28,14 @@ body {
 
 .logo {
   width: 125px;
+}
+
+.inputFilme{
+  background-color: transparent;
+}
+
+.informacoes{
+  width: 400px;
 }
 
 .card-filmeInfo {
@@ -90,9 +104,26 @@ body {
   filter: drop-shadow(2px 1px 4px #1ee0d0);
 }
 
+.footerInfo{
+  background-color: #060c21;
+  height: 4em;
+  border-radius: 20px;
+}
+
+.footerInfo p{
+    margin-top: 20px;
+}
+
+.navbar:hover{
+  background-color: #060c21;
+  margin: 20px;
+  border-radius: 30px;
+}
+
 @media (max-width: 700px) {
   .footerInfo {
     display: flex;
     flex-direction: column;
+    height: auto;
   }
 }

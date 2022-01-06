@@ -3,6 +3,28 @@
 body {
   margin: 0;
   padding: 0;
+  color: white;
+  background-image: url(../../images/blurry-gradient-haikei.png);
+  background-size: cover;
+  background-position: center;
+}
+
+.navbar {
+  font-family: 'Be Vietnam Pro', sans-serif;
+  background-color: transparent;
+  transition: 1s;
+}
+
+.navbar-toggler-icon {
+  filter: brightness(0) contrast(500) invert(1);
+}
+
+.logo {
+  width: 125px;
+}
+
+.inputFilme{
+  background-color: transparent;
 }
 
 .login,
@@ -67,7 +89,7 @@ body {
 
 #forgotPass {
   text-decoration: none;
-  color: #ffffff;
+  color: #060c21;
 }
 
 .passForm {
@@ -85,6 +107,22 @@ body {
   outline-color: red;
 }
 
+.footerInfo{
+  background-color: #060c21;
+  height: 4em;
+  border-radius: 20px;
+}
+
+.footerInfo p{
+    margin-top: 20px;
+}
+
+.navbar:hover{
+  background-color: #060c21;
+  margin: 20px;
+  border-radius: 30px;
+}
+
 .logo:hover{
   transition: 2s;
   transform: scale(1.1);
@@ -94,8 +132,16 @@ body {
   filter: drop-shadow(2px 1px 4px #1ee0d0);
 }
 
+#forgotPass:hover{
+  color: #294795;
+}
+
 @media screen and (max-width: 700px) {
   .login {
     width: 100%;
+  }
+  .footerInfo {
+    flex-direction: column;
+    height: auto;
   }
 }
